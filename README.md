@@ -31,14 +31,15 @@
 
 ## 도메인 협력 관계
 <p align="center">
-  <img width="512" src="https://github.com/user-attachments/assets/2404fd6b-d1ac-4685-9c7b-0c53ed1aa4be" alt="도메인 협력 관계 다이어그램"/>
+  <img width="512" src="https://github.com/user-attachments/assets/4ee25655-8e76-4463-a395-ef8831f90ba7" alt="도메인 협력 관계 다이어그램"/>
 </p>
+
 
 ---
 
 ## 회원 클래스 및 회원 객체 다이어그램
 <p align="center">
-  <img width="515" src="https://github.com/user-attachments/assets/ac342447-1ba2-4706-ae65-3b76e230fe26" alt="회원 클래스 다이어그램"/>
+  <img width="515" src="https://github.com/user-attachments/assets/55da7c1a-2291-4b0a-afbd-1e7e2b4fb321" alt="회원 클래스 다이어그램"/>
 </p>
 
 ---
