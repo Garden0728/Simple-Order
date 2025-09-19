@@ -39,6 +39,10 @@
 
 ---
 
+## 문제상황
+DIP, OCP 문제 발생 -> 추상화 인터페이스에만 의존을 해야하지만 구현체에도 의존하고 있음. 
+해결 -> 역전 IOC  AppConfig 구현(프로그램 제어흐름 가져감) -> 생성자로 주입을 하며 따로 관리하여 인터페이스에만 의존할 수 있도록 함.
+
 ## 회원 클래스 및 회원 객체 다이어그램
 <p align="center">
   <img width="515" src="https://github.com/user-attachments/assets/55da7c1a-2291-4b0a-afbd-1e7e2b4fb321" alt="회원 클래스 다이어그램"/>
