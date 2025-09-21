@@ -10,22 +10,26 @@ import hello.core.member.MemoryMemberRepository;
 import hello.core.order.OrderService;
 import hello.core.order.OrderServiceImpl;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 import java.lang.reflect.Member;
 //DI Container
+@Configuration
 public class AppConfig { //기획자 같은 역할 동작 전체 구성 책임
         //생성자 주입 //역학을 세우고 구현이 들어가는 설계
-    public MemberService memberService() {
+    @Bean
+    public MemberService memberService() { // key : memberService, value : MemberServiceImpl 객체 인스턴스로 container에 등록
         return new MemberServiceImpl(memberRepository());
     }
-
-    private static MemberRepository memberRepository() { //중복제거 하기 위해서 따로 추출
+    @Bean
+    public static MemberRepository memberRepository() { //중복제거 하기 위해서 따로 추출
         return new MemoryMemberRepository();
     }
-
+    @Bean
     public OrderService orderService() {
         return new OrderServiceImpl(memberRepository(),discountPolicy());
     }
+    @Bean
     public DiscountPolicy discountPolicy() {
         return new RateDiscountPolicy();
     }
