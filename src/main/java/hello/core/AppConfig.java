@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.lang.reflect.Member;
-//DI Container
+//DI Container //Bean 등록 방법 팩토리 빈을 통하여 등록하는 방식임.
 @Configuration
 public class AppConfig { //기획자 같은 역할 동작 전체 구성 책임
         //생성자 주입 //역학을 세우고 구현이 들어가는 설계
