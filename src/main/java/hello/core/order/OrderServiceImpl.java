@@ -24,5 +24,8 @@ public class OrderServiceImpl implements OrderService {
         int discountPrice = discountPolicy.discount(member, itemPrice); //할인정책을 분리해서 단일책임원칙을 잘 지킴
         return new Order(memberId,itemName,itemPrice,discountPrice);
     }
-
+    //테스트용도
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
+    }
 }
