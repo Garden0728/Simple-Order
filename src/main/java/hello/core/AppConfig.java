@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.lang.reflect.Member;
+//Spring Container를 쓰면 기본적으로 객체를 싱글톤으로 만들어서 관리해줌
 //DI Container //Bean 등록 방법 팩토리 빈을 통하여 등록하는 방식임.
 @Configuration
 public class AppConfig { //기획자 같은 역할 동작 전체 구성 책임
