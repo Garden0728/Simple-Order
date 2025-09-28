@@ -8,10 +8,10 @@ import hello.core.member.MemberRepository;
 import hello.core.member.MemoryMemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
-
 @Component
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 public class OrderServiceImpl implements OrderService {
 
      private final MemberRepository memberRepository ;
@@ -31,11 +31,11 @@ public class OrderServiceImpl implements OrderService {
         this.discountPolicy = discountPolicy;
     }*/
 
-/*     @Autowired
+     @Autowired
      public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
          this.memberRepository = memberRepository;
          this.discountPolicy = discountPolicy;
-    }*/
+    }
     //private final DiscountPolicy discountPolicy = new FixDiscountPolicy(); /추상에도 의존을 헸지만 구현체에도 의존을 했으므로 DIP 위반
     //private final DiscountPolicy discountPolicy = new RateDiscountPolicy();// 위에 상황으로 정책이 변경되는순간 OrderServiceImpl OCP 위반
     @Override

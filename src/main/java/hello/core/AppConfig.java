@@ -47,8 +47,7 @@ public class AppConfig { //기획자 같은 역할 동작 전체 구성 책임
     @Bean
     public OrderService orderService() {
         System.out.println("call AppConfig.orderService");
-        /*return new OrderServiceImpl(memberRepository(), discountPolicy());*/
-        return null;
+        return new OrderServiceImpl(memberRepository(), discountPolicy());
     }
 
     @Bean
